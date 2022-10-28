@@ -31,13 +31,6 @@ namespace DZ3
             string text = tbIn.Text;
             int N = text.Length;
             string Text = text.ToLower();
-            /*
-            char[] text = new char[N];
-            for (int i=0; i<N; i++) 
-            {
-                text[i] = Text[i];
-            }
-            */
 
             if (RdBt1.IsChecked == true) 
             {
@@ -94,80 +87,6 @@ namespace DZ3
         }
     }
 }
-/*private void Button_Click(object sender, RoutedEventArgs e)
-{
-byte red = 255; byte green = 255; byte blue = 255;
-if (ChBx1.IsChecked == true && ChBx2.IsChecked == false)
-{
-int list = CmB.SelectedIndex; //Берём значение из списка
-switch (list)
-{
-case 0: // красный
-red = 255; green = 0; blue = 0;
-break;
-case 1: // зелёный
-red = 0; green = 255; blue = 0;
-break;
-case 2: // синий
-red = 0; green = 0; blue = 255;
-break;
-case 3: // жёлтый
-red = 255; green = 255; blue = 0;
-break;
-case 4: // оранжевый
-red = 255; green = 123; blue = 0;
-break;
-case 5: // фиолетовый
-red = 200; green = 0; blue = 255;
-break;
-case 6: // чёрный
-red = 0; green = 0; blue = 0;
-break;
-case 7: // белый
-red = 255; green = 255; blue = 255;
-break;
-case 8: // голубой
-red = 0; green = 255; blue = 255;
-break;
-case 9: // розовый
-red = 255; green = 120; blue = 120;
-break;
-}
-Background = new SolidColorBrush(Color.FromArgb(255, red, green, blue));
-
-}
-else if (ChBx1.IsChecked == false && ChBx2.IsChecked == true)
-{
-bool Key = true;
-while (!byte.TryParse((TBR.Text), out red))
-{
-MessageBox.Show("Напишите в строке R число от 0 до 255");
-Key = false;
-break;
-}
-while (!byte.TryParse((TBG.Text), out red))
-{
-MessageBox.Show("Напишите в строке G число от 0 до 255");
-Key = false;
-break;
-}
-while (!byte.TryParse((TBB.Text), out red))
-{
-MessageBox.Show("Напишите в строке B число от 0 до 255");
-Key = false;
-break;
-}
-if (Key == true)
-Background = new SolidColorBrush(Color.FromArgb(255, red, green, blue));
-}
-else
-{
-MessageBox.Show("Выберите одину из граф");
-}
-
-}*/
-
-
 
 
 
